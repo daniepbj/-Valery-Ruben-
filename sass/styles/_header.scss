@@ -1,0 +1,20 @@
+@mixin flexCenter($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+header {
+
+    @include flexCenter(column, lightcoral);
+
+    height: 250px;
+    button {
+        background: $primaryBtn;
+        &:hover {
+            background: lightpink;
+        }
+    }
+}
