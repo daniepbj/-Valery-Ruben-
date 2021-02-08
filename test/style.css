@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #AAFFD1;
+}
+
+.container img {
+    position: relative;
+}
+
+.ground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ground_summer {
+    z-index: 10;
+    width: 1200px;
+    top: 290px;
+}
+
+#hill_1_summer {
+    top: 920px;
+    width: 500px;
+    left: 300px;
+    animation-name: example;
+    animation-duration: 3.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#hill_2_summer {
+    top: 900px;
+    width: 500px;
+    z-index: -2;
+    animation-name: example;
+    animation-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+#hill_3_summer {
+    top: 920px;
+    width: 500px;
+    right: 300px;
+    animation-name: example;
+    animation-duration: 5s;
+    transition-timing-function: ease-in-out;
+    z-index: -1;
+}
+
+#tree_1_summer {
+    top: 360px;
+    right: 80px;
+    width: 250px;
+}
+
+#tree_2_summer {
+    top: 320px;
+    width: 250px;
+}
+
+#tree_3_summer {
+    top: 320px;
+    left: 80px;
+    width: 250px;
+}
+
+.clippath {
+    width: 100%;
+    height: 300px;
+    background-color: #AAFFD1;
+    position: relative;
+    top: 270px;
+}
+
+@keyframes example {
+    0%   {transform: translateY(350px);}
+    100% {transform: translateY(0);}
+  }
